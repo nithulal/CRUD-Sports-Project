@@ -1,0 +1,37 @@
+[
+  {
+  "Id": 1,
+  "Sku": "SKJJ7979",
+  "Name":"Skipping Rope",
+  "Category": "Equipment",
+  "Price": 9.99
+ },
+ {
+  "Id": 2,
+  "Sku": "DFDF4534",
+  "Name":"Treadmill",
+  "Category": "Equipment",
+   "Price": 109.99
+ },
+ {
+  "Id": 3,
+  "Sku": "ERWERW32423",
+  "Name":"Dumbbell 5 kg",
+  "Category": "Equipment",
+   "Price": 9.99
+ },
+ {
+  "Id": 4,
+  "Sku": "EWWQ434290",
+  "Name":"Ball",
+  "Category": "Equipment",
+   "Price": 4.99
+ },
+ {
+  "Id": 5,
+  "Sku": "EWRWE342",
+  "Name":"Kettle ball",
+  "Category": "Equipment",
+   "Price": 19.99
+ }
+]
