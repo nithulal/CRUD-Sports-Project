@@ -8,7 +8,7 @@ namespace CRUDProject.Configuration
 {
     public class SqlHelper
     {
-        public static SqlConnection DatabaseConnect(ISettings settings, ILogging logging)
+        public static SqlConnection DatabaseConnect(ISettings settings, ILogger logging)
         {
             try
             {

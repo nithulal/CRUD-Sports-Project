@@ -16,7 +16,15 @@ builder.Services.AddSingleton<IUnitOfWorkProvider, UnitOfWorkProvider>();
 
 //Services
 builder.Services.AddScoped<IProductService,ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder =>
+    {
+        builder.AllowAnyOrigin();
+    });
+});
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -25,11 +33,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+else
+{
+    app.UseHsts();
+}
 
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.UseCors();
 
 app.Run();

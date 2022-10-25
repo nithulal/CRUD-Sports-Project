@@ -11,5 +11,8 @@ namespace CRUDProject.Repositories
         }
 
         public IProductRepository ProductRepository => Resolve<IProductRepository, ProductRepository>();
+
+        public ICategoryRepository CategoryRepository => Resolve<ICategoryRepository, CategoryRepository>();
+
     }
 }
